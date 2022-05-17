@@ -1,0 +1,42 @@
+.UserPlaylist {
+    display: flex;
+    flex-grow: 1;
+    min-width: 200px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    max-height: 600px;
+    padding: 1.16rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+}
+
+.UserPlaylist h2 {
+    text-align: left;
+    height: 3rem;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 7px 0;
+    border-bottom: 1px solid #6f6f6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.55rem;
+    color: #fff;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+    .UserPlaylist {
+        width: 90%;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
